@@ -13,7 +13,7 @@ public class Data {
     protected static final String URL_CONVERTER = "https://convertio.co/ru/";
 
     @AfterAll
-    private static void cleanDownloads() throws IOException {
+    protected static void cleanDownloads() throws IOException {
         deleteDirectory(new File(PATH_TO_DOWNLOAD));
     }
 }

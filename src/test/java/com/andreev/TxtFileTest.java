@@ -2,16 +2,17 @@ package com.andreev;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import io.qameta.allure.Step;
 import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
-import java.io.IOException;
 
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
-import static org.apache.commons.io.FileUtils.deleteDirectory;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 @Nested()
 @DisplayName("Тесты для txt файлов")
