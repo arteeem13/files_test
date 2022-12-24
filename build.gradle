@@ -37,7 +37,8 @@ dependencies {
             'com.browserup:browserup-proxy-core:2.1.2',
             'org.apache.logging.log4j:log4j-core:2.19.0',
             'org.apache.poi:poi:5.2.2',
-            'com.opencsv:opencsv:5.7.1'
+            'com.opencsv:opencsv:5.7.1',
+            'org.assertj:assertj-core:3.23.1'
     )
 
     testRuntimeOnly(
